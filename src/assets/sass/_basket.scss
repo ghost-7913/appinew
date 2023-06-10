@@ -1,0 +1,225 @@
+.basket {
+    padding: 40px;
+
+    &-Title {
+        @include center;
+
+        P {
+            padding: 0 10px;
+
+            button {
+                background: white;
+                color: black;
+                border: 2px solid $primary-color;
+            }
+        }
+
+        div {
+            flex: 1;
+            height: 3px;
+            border-radius: 9px;
+            background-color: #ffab5c6e;
+        }
+    }
+
+    &-Content {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        flex-wrap: wrap;
+
+        @media (max-width:992px) {
+            flex-direction: column;
+        }
+
+        &-Detail {
+
+            border: 1px solid #eee;
+            border-radius: 9px;
+            padding: 15px;
+            flex: 1;
+
+            &-Title {
+                @include center;
+                justify-content: space-between;
+                font-size: 20px;
+                margin: 20px 0;
+                font-weight: bold;
+            }
+
+            &-Section {
+                display: flex;
+                flex-direction: column;
+
+                &-Top {
+                    @include center;
+                    justify-content: flex-start;
+                    @media (max-width:768px) {
+                        align-items: flex-start;
+                        flex-direction: column;                        
+                    }
+                    img {
+                        width: 300px;
+                    }
+
+                    &-Explanation {
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 45px;
+
+                        p {
+                            @include center;
+                            justify-content: flex-start;
+
+                            i {
+                                margin-left: 10px;
+                                font-size: 20px;
+                            }
+
+                            img {
+                                margin-left: 10px;
+                                width: 20px;
+                            }
+                        }
+
+                        span {
+                            margin: 15px 0;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                &-Count {
+                    @include center;
+                    justify-content: space-between;
+                    padding: 0 15px;
+
+                    &-Section {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 30%;
+                        border: 2px solid $primary-color;
+                        border-radius: 9px;
+                        padding: 0px 10px;
+
+                        @media (max-width:992px) {
+                            width: 40%;
+                        }
+
+                        @media (max-width:768px) {
+                            width: 50%;
+                        }
+
+                        i {
+                            font-size: 20px;
+                            color: $primary-color;
+                        }
+
+                        input {
+                            flex: 1;
+                            border: none;
+
+                            &:focus {
+                                border: none;
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    a {
+                        @include center;
+                        @include center;
+                        color: blue;
+                        text-decoration: underline;
+
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-Total {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid #eee;
+            width: 20%;
+            border-radius: 9px;
+            padding: 30px;
+
+            @media (max-width:992px) {
+                width: 100%;
+            }
+
+            &-Price {
+                &-Section {
+                    @include center;
+                    justify-content: space-between;
+                    padding: 10px 0;
+
+                    p {
+                        font-weight: bold;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &-Btn {
+                @include center;
+
+                a {
+                    width: 100%;
+                    @include center;
+
+                    button {
+
+                        width: 90%;
+                        bottom: 10px;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    // send time
+    &-Send-Time {
+        width: 100%;
+        padding: 40px;
+
+        &-Stepper {
+            @include center;
+            border: 1px solid #eee;
+            border-radius: 9px;
+            padding: 10px;
+            margin: 20px 0;
+
+            span {
+                @include center;
+                padding: 0 10px;
+                font-size: 30px;
+              
+                @media (max-width:768px) {
+                    font-size: 20px;
+                }
+                @media (max-width:576px) {
+                    font-size: 16px;
+                }
+               
+            }
+
+            div {
+                flex: 1;
+                height: 2px;
+                background-color: $primary-color;
+            }
+        }
+    }
+}
