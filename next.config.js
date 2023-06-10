@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   unoptimized : true,
-  output: 'export',
 }
 
 module.exports = nextConfig
