@@ -1,5 +1,4 @@
 import MainContent from '@/layout/userDashboard/MainContent';
-import SideBar from '@/layout/userDashboard/sideBar';
 import React from 'react';
 
 const index = () => {
