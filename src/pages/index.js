@@ -15,7 +15,7 @@ import ThirdOffer from '@/component/home/ThirdOffer'
 import Propozal from '@/component/home/Propozal'
 
 const inter = Inter({ subsets: ['latin'] })
-
+//this is just a comment for test
 export default function Home() {
   return (
     <main >
